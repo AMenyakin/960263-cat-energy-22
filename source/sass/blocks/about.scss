@@ -1,0 +1,43 @@
+.about {
+  padding: 0 $padding-small;
+  padding-bottom: 42px;
+}
+
+.about__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+
+  &--utility::after {
+    content: url("../../img/utility.svg");
+    position: absolute;
+    top: 16px;
+    left: 17px;
+  }
+
+  &--preparation::after {
+    content: url("../../img/preparation.svg");
+    position: absolute;
+    top: 13px;
+    left: 15px;
+  }
+
+  &--dose::after {
+    content: url("../../img/dose.svg");
+    position: absolute;
+    top: 15px;
+    left: 17px;
+  }
+
+  &--term::after {
+    content: url("../../img/term.svg");
+    position: absolute;
+    top: 13px;
+    left: 14px;
+  }
+}
+
+.about__title {
+  margin-bottom: 38px;
+}
