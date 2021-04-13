@@ -1,0 +1,47 @@
+.programs {
+  margin-bottom: 27px;
+  padding: 0 $padding-small;
+}
+
+.programs__item {
+  background-color: $basic-grey;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.programs__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  &--slim::after {
+    content: url("../../img/cat-slim.svg");
+    position: absolute;
+    top: -3px;
+    left: 7px;
+  }
+
+  &--pro::after {
+    content: url("../../img/cat-pro.svg");
+    position: absolute;
+    top: 11px;
+    left: -9px;
+  }
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black;
+  text-transform: uppercase;
+}

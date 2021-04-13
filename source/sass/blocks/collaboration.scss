@@ -1,0 +1,24 @@
+.collaboration {
+  padding: 0;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
+}
+
+.collaboration__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: $cod-gray;
+  text-transform: uppercase;
+}
+
+.collaboration__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.collaboration__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 114px;
+}
