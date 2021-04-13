@@ -12,6 +12,9 @@
   font-style: normal;
 }
 
+$font-family-arial: "Arial", sans-serif;
+$font-family-oswald: "Oswald", sans-serif;
+
 $basic-black: #000000;
 $basic-white: #ffffff;
 $basic-grey: #f2f2f2;
@@ -21,6 +24,8 @@ $tundora: #444444;
 $gallery: #eaeaea;
 $alto: #d9d9d9;
 $cod-gray: #111111;
+$mine-shaft: #222222;
+$mercury: #e6e6e6;
 
 $padding-small: 20px;
 $padding-medium: 30px;
@@ -43,10 +48,4 @@ $padding-large: 110px;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

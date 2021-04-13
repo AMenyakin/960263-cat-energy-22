@@ -1,8 +1,11 @@
 .page-footer__wrapper {
-  padding: 39px $padding-small 22px $padding-small;
+  padding-top: 39px;
+  padding-bottom: 22px;
   background-color: $basic-grey;
 }
 
 .page-footer__map {
   display: block;
+  margin: auto;
+  width: auto;
 }
