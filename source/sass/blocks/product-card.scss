@@ -1,0 +1,29 @@
+.product-card {
+  padding: 19px 0 25px 0;
+  border-top: 1px solid $gallery2;
+
+  &:last-child {
+    border-bottom: 1px solid $gallery2;
+  }
+}
+
+.product-card__button {
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $mine-shaft;
+  text-transform: uppercase;
+}
+
+.product-card__description-text {
+  font-family: $font-family-arial;
+  font-size: 12px;
+  line-height: 16px;
+}

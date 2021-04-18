@@ -1,0 +1,12 @@
+.socials {
+  border-top: 1px solid $alto;
+  border-bottom: 1px solid $alto;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+  height: 63px;
+}

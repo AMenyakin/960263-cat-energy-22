@@ -1,0 +1,41 @@
+.additional-products {
+  padding-bottom: 35px;
+}
+
+.additional-products__title {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.additional-products__item {
+  padding-bottom: 19px;
+  border-top: 1px solid $silver;
+
+  &:last-child {
+    border-bottom: 1px solid $silver;
+  }
+}
+
+.additional-products__item-title {
+  margin: 13px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $mine-shaft;
+  text-transform: uppercase;
+}
+
+.additional-products__order-button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 15px 10px 15px;
+}
+
+.additional-products__info {
+  margin-bottom: 15px;
+}
