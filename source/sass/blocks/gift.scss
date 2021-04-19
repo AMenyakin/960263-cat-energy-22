@@ -1,0 +1,21 @@
+.gift {
+  padding-top: 58px;
+  height: 289px;
+  background-image: url("../../img/gift-photo-small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.gift__text {
+  display: inline-block;
+  margin: 0;
+  width: 161px;
+  font-family: $font-family-arial;
+  color: $basic-white;
+}
+
+.gift__icon-container {
+  margin-bottom: 48px;
+}

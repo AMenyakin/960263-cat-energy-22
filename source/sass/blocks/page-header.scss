@@ -1,6 +1,15 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid $alto;
+
+  &--menu-opened {
+    border-bottom: none;
+
+    .page-header__navigation {
+      display: block;
+    }
+  }
 }
 
 .page-header__menu-toggle {
@@ -37,5 +46,6 @@
 }
 
 .page-header__navigation {
+  display: none;
   margin: 0 -#{$padding-small};
 }
