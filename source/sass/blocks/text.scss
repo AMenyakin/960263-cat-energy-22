@@ -3,4 +3,9 @@
   font-family: $font-family-arial;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

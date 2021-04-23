@@ -1,35 +1,21 @@
 .nutrition {
   margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, $basic-white 50%, $translucent-green 50%);
+  }
 }
 
-.nutrition__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $basic-white;
+.nutrition__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
-.nutrition__slogan {
-  margin-top: 25px;
-  font-size: 14px;
-  line-height: 14px;
-  color: $basic-white;
-}
-
-.nutrition__image {
-  position: absolute;
-  bottom: 43px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.nutrition__content {
+.nutrition__top-container {
   position: relative;
-  min-height: 302px;
-  margin-bottom: 138px;
-  padding: 27px 35px 27px 36px;
+  padding-top: 27px;
+  height: 302px;
   background-color: $translucent-green;
   text-align: center;
 
@@ -43,17 +29,130 @@
     height: 100%;
     background-image: url("../../img/nutrition-background-cat.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  .nutrition__select-program-button {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 112px;
+    height: 230px;
+    text-align: left;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+
+    .nutrition__select-program-button {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 223px;
   }
 }
 
-.nutrition__content-button {
-  display: none;
+.nutrition__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
 }
 
-.nutrition__decoration {
+.nutrition__slogan {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.nutrition__title,
+.nutrition__slogan {
+  color: $basic-black;
+
+  @media (max-width: $mobile-width-only) {
+    color: $basic-white;
+  }
+}
+
+.nutrition__bottom-container {
   position: relative;
-  padding: 0 $padding-small;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 $gap-small;
+  height: 178px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 112px;
+    height: 580px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50%;
+    height: 696px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 720px;
+      height: 100%;
+      background-image: url("../../img/nutrition-background-cat-2.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      z-index: -1;
+    }
+
+    .nutrition__select-program-button {
+      display: none;
+    }
+  }
+}
+
+.nutrition__image {
+  position: absolute;
+  top: -135px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: -100px;
+    bottom: 0;
+    margin-top: auto;
+    margin-left: 0;
+    z-index: 0;
+  }
+}
+
+.nutrition__select-program-button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

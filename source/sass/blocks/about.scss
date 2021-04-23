@@ -1,6 +1,16 @@
 .about {
-  padding: 0 $padding-small;
+  padding: 0 $gap-small;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $gap-medium;
+    padding-right: $gap-medium;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $gap-large;
+    padding-right: $gap-large;
+  }
 }
 
 .about__icon {
@@ -40,4 +50,19 @@
 
 .about__title {
   margin-bottom: 38px;
+}
+
+.about__list {
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 37px;
+  }
 }
