@@ -14,5 +14,16 @@
 .collaboration__wrapper {
   display: flex;
   align-items: center;
+  padding: 0 $gap-small;
   min-height: 114px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
 }

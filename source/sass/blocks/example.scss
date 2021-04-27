@@ -1,6 +1,7 @@
 .example {
-  padding: 27px $padding-small 25px $padding-small;
-  background-color: $gallery;
+  @media (min-width: $desktop-width) {
+    background-color: $gallery;
+  }
 }
 
 .example__weight,
@@ -16,6 +17,7 @@
 }
 
 .example__cost {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
@@ -24,4 +26,41 @@
 .example__slider-text {
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.example__top-container {
+  padding-left: $gap-small;
+  padding-right: $gap-small;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $gallery;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: $gap-medium;
+    padding-right: $gap-medium;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $gap-large;
+    padding-right: $gap-large;
+    background-color: transparent;
+  }
+}
+
+.example__slider {
+  padding-left: $gap-small;
+  padding-right: $gap-small;
+  background-color: $gallery;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $gap-medium;
+    padding-right: $gap-medium;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $gap-large;
+    padding-right: $gap-large;
+    background-color: transparent;
+  }
 }

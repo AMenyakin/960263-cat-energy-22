@@ -12,6 +12,7 @@
   font-style: normal;
 }
 
+
 $font-family-arial: "Arial", sans-serif;
 $font-family-oswald: "Oswald", "Arial", sans-serif;
 
@@ -29,9 +30,15 @@ $mine-shaft: #222222;
 $mercury: #e6e6e6;
 $silver: #cdcdcd;
 
-$padding-small: 20px;
-$padding-medium: 30px;
-$padding-large: 110px;
+$gap-small: 20px;
+$gap-medium: 30px;
+$gap-large: 110px;
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+$tablet-width-only: 1439px;
+
 
 *,
 *::before,
