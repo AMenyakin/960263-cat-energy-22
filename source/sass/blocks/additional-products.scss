@@ -18,6 +18,11 @@
   &:last-child {
     border-bottom: 1px solid $silver;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 896px;
+  }
 }
 
 .additional-products__item-title {
@@ -38,4 +43,11 @@
 
 .additional-products__info {
   margin-bottom: 15px;
+}
+
+.additional-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

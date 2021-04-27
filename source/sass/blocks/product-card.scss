@@ -1,5 +1,6 @@
 .product-card {
-  padding: 19px 0 25px 0;
+  padding-top: 19px;
+  padding-bottom: 25px;
   border-top: 1px solid $gallery2;
 
   &:last-child {
@@ -26,4 +27,12 @@
   font-family: $font-family-arial;
   font-size: 12px;
   line-height: 16px;
+}
+
+.product-card__wrapper {
+  display: block;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+  }
 }

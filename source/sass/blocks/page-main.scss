@@ -17,14 +17,17 @@
 }
 
 .page-main__wrapper {
-  padding: 0 $gap-small;
+  padding-left: $gap-small;
+  padding-right: $gap-small;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding: 0 67px 0 70px;
+    padding-left: $gap-medium;
+    padding-right: $gap-medium;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
