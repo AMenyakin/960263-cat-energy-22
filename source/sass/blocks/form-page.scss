@@ -1,3 +1,9 @@
 .form-page__collaboration {
   background-color: $basic-grey;
 }
+
+.form-page .page-main__wrapper {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding: 0 67px 0 70px;
+  }
+}
