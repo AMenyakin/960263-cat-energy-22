@@ -5,5 +5,16 @@
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 100;
   }
+}
+
+.main-page .main-nav {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
+.main-page .main-nav__item:last-child() {
+  border-bottom: none;
 }
