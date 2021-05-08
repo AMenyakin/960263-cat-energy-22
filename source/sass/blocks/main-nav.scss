@@ -42,3 +42,38 @@
     display: block;
   }
 }
+
+.main-nav__link {
+  position: relative;
+  color: currentColor;
+
+  &--active::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+    left: 0;
+    bottom: -8px;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      background-color: currentColor;
+    }
+  }
+}
+
+.main-nav__link[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

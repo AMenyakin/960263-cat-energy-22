@@ -3,6 +3,31 @@
     .page-header__navigation {
       display: block;
     }
+
+    .page-header__menu-toggle {
+      width: 18px;
+      height: 18px;
+      background-image: url("../../img/cross.svg");
+      background-size: contain;
+    }
+  }
+
+  &--no-js {
+    .page-header__menu-toggle {
+      display: none;
+    }
+
+    .page-header__navigation {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
   }
 }
 
@@ -26,6 +51,8 @@
   cursor: pointer;
   background-color: transparent;
   background-image: url("../../img/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (max-width: $mobile-width-only) {
     display: block;

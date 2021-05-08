@@ -18,3 +18,12 @@
 .main-page .main-nav__item:last-child() {
   border-bottom: none;
 }
+
+.main-page .logo:hover,
+.main-page .logo:active {
+  opacity: 1;
+}
+
+.main-page .page__body {
+  counter-reset: about-item;
+}

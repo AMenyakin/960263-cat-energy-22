@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="container page-header__wrapper">
         <div class="page-header__inner-wrapper">
-          <div class="page-header__logo-wrapper">
-            <a class="page-header__logo-with-image">
-              <img class="page-header__logo" src="./img/logo-image.svg" width="33" height="37" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
-            <a class="page-header__logo-with-text">
-              <img class="page-header__logo" src="./img/logo-text-small.svg" width="101" height="18" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
-          </div>
+          <a class="logo">
+            <img class="logo__image" src="./img/logo.svg" width="190" height="38" alt="Логотип «Cat Energy»">
+          </a>
           <button class="page-header__menu-toggle">
             <span class="visually-hidden">Показать/скрыть меню сайта</span>
           </button>
@@ -25,7 +20,7 @@
         <nav class="main-nav page-header__navigation">
           <ul class="list main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">главная</a>
+              <a class="main-nav__link main-nav__link--active">главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">каталог продукции</a>
@@ -69,7 +64,17 @@
                   Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям?
                   Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </p>
-                <a class="programs__link" href="#">каталог slim</a>
+                <a class="programs__link" href="#">
+                  каталог slim
+                  <svg class="programs__arrow-small-icon" width="39" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                  </svg>
+                  <svg class="programs__arrow-icon" width="47" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"/>
+                    <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"/>
+                  </svg>
+                </a>
               </div>
               <div class="programs__image programs__image--slim"></div>
             </li>
@@ -83,7 +88,17 @@
                   Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro
                   поможет вашему коту нарастить необходимые мышцы!
                 </p>
-                <a class="programs__link" href="#">каталог pro</a>
+                <a class="programs__link" href="#">
+                  каталог pro
+                  <svg class="programs__arrow-small-icon" width="39" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                  </svg>
+                  <svg class="programs__arrow-icon" width="47" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"/>
+                    <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"/>
+                  </svg>
+                </a>
               </div>
               <div class="programs__image programs__image--pro"></div>
             </li>
@@ -116,36 +131,48 @@
       </section>
 
       <section class="example">
-        <div class="example__top-container">
+        <div class="example__title-container">
           <div class="container">
-            <div class="example__title-wrapper">
-              <h2 class="section-title">Живой пример</h2>
-            </div>
-            <div class="example__content-wrapper">
-              <p class="text">
-                Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
-                Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему
-                спит по&nbsp;16&nbsp;часов в&nbsp;день.
-              </p>
-              <div class="example__stats">
-                <div class="example__weight">
-                  5 кг <span class="example__stats-caption">снижение веса</span>
-                </div>
-                <div class="example__term">
-                  60 дней <span class="example__stats-caption">затрачено времени</span>
-                </div>
-                <p class="example__cost">затраты на питание: 15 000 руб.</p>
-              </div>
-            </div>
+            <h2 class="section-title">Живой пример</h2>
           </div>
         </div>
-        <div class="example__slider">
+        <div class="example__wrapper">
           <div class="container">
-            <img src="./img/cat-before.png" alt="Как выглядел кот до" width="311" height="232">
-            <div class="example__slider-wrapper">
-              <span class="example__slider-text">было</span>
-              <div class="example__slider-bar"></div>
-              <span class="example__slider-text">стало</span>
+            <div class="example__box">
+              <div class="example__content">
+                <div class="container">
+                  <p class="text">
+                    Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
+                    Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему
+                    спит по&nbsp;16&nbsp;часов в&nbsp;день.
+                  </p>
+                  <div class="example__stats">
+                    <div class="example__stats-wrapper">
+                      <div class="example__weight">
+                        <span class="example__stats-value">5 кг</span>
+                        <span class="example__stats-caption">снижение веса</span>
+                      </div>
+                      <div class="example__term">
+                        <span class="example__stats-value">60 дней</span>
+                        <span class="example__stats-caption">затрачено времени</span>
+                      </div>
+                    </div>
+                    <p class="example__cost">затраты на питание: <span class="example__sum">15 000 руб.</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="example__slider">
+                <div class="container">
+                  <img class="example__slider-image" src="./img/cat-before.png" alt="Как выглядел кот до" width="311" height="232">
+                  <div class="example__slider-wrapper">
+                    <span class="example__slider-text">было</span>
+                    <div class="example__slider-bar">
+                      <div class="example__slider-inner-bar"></div>
+                    </div>
+                    <span class="example__slider-text">стало</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,7 +184,7 @@
         <section class="collaboration page-footer__collaboration">
           <h2 class="visually-hidden">Сотрудничество с нами</h2>
           <div class="container collaboration__wrapper">
-            <p class="collaboration__text">приглашаем к сотрудничеству дилеров!</p>
+            <p class="collaboration__text">приглашаем<br>к сотрудничеству дилеров!</p>
             <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </section>
@@ -171,9 +198,11 @@
       <div class="page-footer__wrapper">
         <div class="container">
           <div class="page-footer__bottom-container">
-            <a class="page-footer__logo">
-              <img src="./img/logo-text.svg" width="128" height="24" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
+            <div class="page-footer__logo-wrapper">
+              <a class="page-footer__logo">
+                <img src="./img/text-logo.svg" width="128" height="24" alt="Интернет магазин питания для котов «Cat Energy»">
+              </a>
+            </div>
 
             <section class="socials">
               <h2 class="visually-hidden">Мы в социальных сетях</h2>
