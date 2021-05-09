@@ -1,10 +1,13 @@
 .page-footer__wrapper {
-  padding: 39px $gap-small 22px $gap-small;
+  padding-left: $gap-small;
+  padding-right: $gap-small;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     padding-left: $gap-medium;
     padding-right: $gap-medium;
+    height: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,4 +41,14 @@
 
 .page-footer__collaboration-container {
   position: relative;
+}
+
+.page-footer__logo-wrapper {
+  padding-top: 39px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: block;
 }

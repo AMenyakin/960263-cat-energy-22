@@ -9,4 +9,12 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+
+  &:hover {
+    background-color: $apple;
+  }
+
+  &:active {
+    color: $translucent-white;
+  }
 }

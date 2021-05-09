@@ -1,14 +1,21 @@
 .collaboration__text {
+  width: 140px;
   font-size: 16px;
   line-height: 18px;
   color: $cod-gray;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .collaboration__address {
   font-family: $font-family-arial;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    text-align: right;
+  }
 }
 
 .collaboration__wrapper {
@@ -20,6 +27,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 71px;
     padding-right: 72px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
