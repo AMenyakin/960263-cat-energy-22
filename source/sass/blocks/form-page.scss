@@ -1,4 +1,4 @@
-.form-page__collaboration {
+.form-page .page-footer__collaboration-container {
   background-color: $basic-grey;
 }
 
@@ -6,4 +6,8 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding: 0 67px 0 70px;
   }
+}
+
+.form-page .main-nav__link::after {
+  background-color: $basic-green;
 }
