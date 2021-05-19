@@ -1,3 +1,15 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic-grey;
+    justify-content: space-between;
+  }
+}
+
 .show-more__button {
   padding: 10px 15px;
   width: 100%;
@@ -11,8 +23,27 @@
   width: 30px;
   height: 30px;
   background-image: url("../../img/plus.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
 
 .show-more__title {
+  margin-top: 23px;
+  margin-bottom: 8px;
+  width: fit-content;
   color: $cod-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    line-height: 22px;
+  }
+}
+
+.show-more .product-card__description-text {
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    line-height: 18px;
+  }
 }

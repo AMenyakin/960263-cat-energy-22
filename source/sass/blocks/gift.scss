@@ -7,8 +7,18 @@
   background-position: center;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 200px;
+  }
+
   @media (min-width: $desktop-width) {
+    display: block;
     width: 245px;
+    height: auto;
   }
 }
 
@@ -18,8 +28,25 @@
   width: 161px;
   font-family: $font-family-arial;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .gift__icon-container {
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
 }

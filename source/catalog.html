@@ -6,18 +6,13 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
-    <header class="page-header">
+  <body class="page__body catalog-page">
+    <header class="page-header page-header--no-js">
       <div class="container page-header__wrapper">
         <div class="page-header__inner-wrapper">
-          <div class="page-header__logo-wrapper">
-            <a class="page-header__logo-with-image">
-              <img class="page-header__logo" src="./img/logo-image.svg" width="33" height="37" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
-            <a class="page-header__logo-with-text">
-              <img class="page-header__logo" src="./img/logo-text-small.svg" width="101" height="18" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
-          </div>
+          <a class="logo" href="index.html">
+            <img class="logo__image" src="./img/logo.svg" width="190" height="38" alt="Логотип «Cat Energy»">
+          </a>
           <button class="page-header__menu-toggle">
             <span class="visually-hidden">Показать/скрыть меню сайта</span>
           </button>
@@ -28,7 +23,7 @@
               <a class="main-nav__link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">каталог продукции</a>
+              <a class="main-nav__link main-nav__link--active">каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">подбор программы</a>
@@ -293,11 +288,11 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container page-footer__collaboration-container">
+      <div class="page-footer__collaboration-container">
         <section class="collaboration page-footer__collaboration">
           <h2 class="visually-hidden">Сотрудничество с нами</h2>
           <div class="container collaboration__wrapper">
-            <p class="collaboration__text">приглашаем к сотрудничеству дилеров!</p>
+            <p class="collaboration__text">приглашаем<br>к сотрудничеству дилеров!</p>
             <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </section>
@@ -311,9 +306,11 @@
       <div class="page-footer__wrapper">
         <div class="container">
           <div class="page-footer__bottom-container">
-            <a class="page-footer__logo" href="index.html">
-              <img src="./img/logo-text.svg" width="128" height="24" alt="Интернет магазин питания для котов «Cat Energy»">
-            </a>
+            <div class="page-footer__logo-wrapper">
+              <a class="page-footer__logo" href="index.html">
+                <img src="./img/text-logo.svg" width="128" height="24" alt="Интернет магазин питания для котов «Cat Energy»">
+              </a>
+            </div>
 
             <section class="socials">
               <h2 class="visually-hidden">Мы в социальных сетях</h2>

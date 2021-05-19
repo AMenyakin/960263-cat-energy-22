@@ -75,6 +75,10 @@
     padding-left: $gap-medium;
     padding-right: $gap-medium;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .page-header__logo-with-image {
