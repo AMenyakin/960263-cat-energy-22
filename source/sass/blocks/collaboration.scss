@@ -5,6 +5,12 @@
   color: $cod-gray;
   text-transform: uppercase;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .collaboration__address {
@@ -13,8 +19,13 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 140px;
+    width: 157px;
+    font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -34,6 +45,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 76px;
     padding-right: 89px;
+    width: 570px;
     background-color: $basic-white;
   }
 }
