@@ -13,8 +13,7 @@
 }
 
 .example__title-container,
-.example__content,
-.example__slider {
+.example__content {
   padding: 0 $gap-small;
 
   @media (min-width: $tablet-width) {
@@ -171,108 +170,6 @@
   }
 }
 
-.example__slider-text {
-  position: relative;
-  color: $basic-black;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      border-bottom: 1px dotted $translucent-black;
-      bottom: -5px;
-      left: 0;
-    }
-  }
-}
-
-.example__slider {
-  padding-bottom: 25px;
-  background-color: $gallery;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 67px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 75px;
-    background-color: transparent;
-  }
-}
-
-.example__slider-image {
-  margin-bottom: 23px;
-}
-
-.example__slider-bar {
-  position: relative;
-  margin: 0 14px;
-  padding: 3px 6px;
-  height: 14px;
-  flex-grow: 1;
-  border: 1px solid $silver;
-  border-radius: 6px;
-  background-color: $basic-white;
-
-  @media (min-width: $tablet-width) {
-    height: 6px;
-    background-color: $alto2;
-  }
-}
-
-.example__slider-inner-bar {
-  width: 50%;
-  height: 6px;
-  border-radius: 6px;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1px solid $silver;
-    background-color: $basic-white;
-    box-shadow: 0 1px 3px $translucent-black;
-    cursor: pointer;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: $basic-green;
-      top: calc(50% - 4px);
-      left: calc(50% - 4px);
-    }
-
-    &:hover {
-      box-shadow: 0 2px 4px $translucent-black;
-    }
-
-    &:focus {
-      box-shadow: 0 3px 5px $translucent-black;
-      border-color: $basic-green;
-    }
-  }
-}
-
-.example__slider-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 6px 38px;
-}
-
 .example__stats-wrapper {
   display: flex;
   justify-content: space-between;
@@ -312,10 +209,10 @@
     justify-content: space-between;
 
     .example__content {
-      width: 500px;
+      width: 435px;
     }
 
-    .example__slider {
+    .slider {
       width: 690px;
     }
   }
