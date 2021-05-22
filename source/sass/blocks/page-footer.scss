@@ -16,10 +16,11 @@
   }
 }
 
-.page-footer__map {
+img.page-footer__map {
   display: block;
   margin: auto;
-  width: auto;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .page-footer__bottom-container {
@@ -32,7 +33,7 @@
 .page-footer__collaboration {
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 0;
+    left: 110px;
     top: 95px;
   }
 }
