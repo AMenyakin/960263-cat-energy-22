@@ -71,6 +71,8 @@
 
   @media (min-width: $tablet-width) {
     height: 101px;
+    width: auto;
+    align-items: flex-end;
   }
 }
 

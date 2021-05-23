@@ -355,3 +355,43 @@
     }
   }
 }
+
+.form__email {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 14px;
+    top: calc(50% - 7px);
+    right: 16px;
+    background-image: url("/img/icon-email.svg");
+    background-size: 19px 14px;
+  }
+
+  .form__text-input {
+    padding-right: 40px;
+  }
+}
+
+.form__phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 14px;
+    top: calc(50% - 7px);
+    right: 16px;
+    background-image: url("/img/icon-phone.svg");
+    background-size: 19px 14px;
+  }
+
+  .form__text-input {
+    padding-right: 40px;
+  }
+}

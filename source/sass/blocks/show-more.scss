@@ -17,6 +17,15 @@
   line-height: 20px;
   color: $tundora;
   background-color: $basic-grey;
+
+  &:hover {
+    background-color: $gallery2;
+  }
+
+  &:focus {
+    color: $basic-black;
+    opacity: 0.5;
+  }
 }
 
 .show-more__icon-container {
