@@ -29,3 +29,8 @@
     }
   }
 }
+
+.socials svg:hover path,
+.developer svg:hover path {
+  fill: $basic-green;
+}

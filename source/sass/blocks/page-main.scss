@@ -39,6 +39,12 @@
     padding-right: $gap-medium;
   }
 
+  @media (min-width: $tablet-width) {
+    .title {
+      margin-bottom: 164px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;

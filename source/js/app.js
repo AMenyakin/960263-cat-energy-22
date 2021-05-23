@@ -1,15 +1,15 @@
 (function() {
-  const header = document.querySelector('.page-header');
+  var header = document.querySelector('.page-header');
   if (header) {
     header.classList.remove('page-header--no-js');
   }
 })();
 
 (function() {
-  const toggleMenuButton = document.querySelector('.page-header__menu-toggle');
-  const pageHeader = document.querySelector('.page-header');
+  var toggleMenuButton = document.querySelector('.page-header__menu-toggle');
+  var pageHeader = document.querySelector('.page-header');
 
-  toggleMenuButton.addEventListener('click', () => {
+  toggleMenuButton.addEventListener('click', function() {
     pageHeader.classList.toggle('page-header--menu-opened');
   });
 })();
