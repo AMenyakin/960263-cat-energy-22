@@ -11,3 +11,9 @@
 .form-page .main-nav__link::after {
   background-color: $basic-green;
 }
+
+.form-page .page-main__box {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}

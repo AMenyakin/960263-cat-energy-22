@@ -5,10 +5,18 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 63px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 75px;
+    }
   }
 
   .text {
     margin-bottom: 25px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 69px;
+    }
   }
 }
 
@@ -55,6 +63,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 69px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -91,7 +103,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 250px;
+    margin-bottom: 254px;
     align-items: center;
   }
 
@@ -154,10 +166,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
+    line-height: 28px;
     width: 180px;
     text-align: right;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,7 +198,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 }
 
@@ -199,7 +212,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     background-color: $basic-grey;
+
+    .slider {
+      position: absolute;
+      left: 44%;
+    }
   }
 }
 

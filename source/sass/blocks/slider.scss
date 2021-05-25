@@ -1,8 +1,64 @@
-.slider-wrapper {
-  bottom: 60px;
+.slider {
+  position: relative;
+  padding-bottom: 35px;
+  background-color: $gallery;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 75px;
+    background-color: transparent;
+  }
+}
+
+.slider-control {
+  margin: auto;
   display: flex;
   align-items: center;
-  padding: 6px 38px;
+  width: 62%;
+
+  &:hover {
+    & .slider-text::after {
+      border-bottom-style: solid;
+    }
+
+    & .slider-inner-bar {
+      @media (min-width: $tablet-width) {
+        box-shadow: 0 2px 4px $translucent-black;
+      }
+    }
+  }
+
+  &:focus {
+    & .slider-text::after {
+      border: none;
+    }
+
+    & .slider-inner-bar {
+      @media (min-width: $tablet-width) {
+        box-shadow: 0 3px 5px $translucent-black;
+        border-color: $basic-green;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 74%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+    width: 82%;
+  }
 }
 
 .slider-inner-bar {
@@ -14,7 +70,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -14px;
-    left: 50%;
+    left: calc(50% - 17px);
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -34,15 +90,6 @@
       top: calc(50% - 4px);
       left: calc(50% - 4px);
     }
-
-    &:hover {
-      box-shadow: 0 2px 4px $translucent-black;
-    }
-
-    &:focus {
-      box-shadow: 0 3px 5px $translucent-black;
-      border-color: $basic-green;
-    }
   }
 }
 
@@ -51,9 +98,12 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    left: 15px;
-    margin-bottom: -50px;
-    width: 650px;
+    bottom: -88px;
+    width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 60px;
   }
 }
 
@@ -68,6 +118,7 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    margin: 0 21px;
     height: 6px;
     background-color: $alto2;
   }
@@ -88,33 +139,8 @@
       display: block;
       width: 100%;
       border-bottom: 1px dotted $translucent-black;
-      bottom: -5px;
+      bottom: -2px;
       left: 0;
     }
-  }
-}
-
-.slider {
-  position: relative;
-  padding-left: $gap-small;
-  padding-right: $gap-small;
-  padding-bottom: 25px;
-  background-color: $gallery;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    padding-left: $gap-medium;
-    padding-right: $gap-medium;
-    padding-bottom: 67px;
-    height: 462px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-bottom: 75px;
-    background-color: transparent;
   }
 }
