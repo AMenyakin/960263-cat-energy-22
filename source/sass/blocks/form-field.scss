@@ -93,6 +93,14 @@
 
 .form-field__radio-label,
 .form-field__checkbox-label {
+  padding: 6px 0 6px 45px;
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 0;
+    padding: 0;
+    padding-left: 59px;
+  }
+
   &:hover::before {
     border-color: $silver2;
   }
@@ -156,16 +164,5 @@
     top: 7px;
     width: 18px;
     height: 10px;
-  }
-}
-
-.form-field__radio-label,
-.form-field__checkbox-label {
-  padding: 6px 0 6px 45px;
-
-  @media (min-width: $tablet-width) {
-    margin: 6px 0;
-    padding: 0;
-    padding-left: 59px;
   }
 }
