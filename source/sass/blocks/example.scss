@@ -74,8 +74,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
-    padding-bottom: 75px;
+    padding-top: 72px;
+    padding-bottom: 70px;
     background-color: transparent;
   }
 }
@@ -119,6 +119,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -142,7 +143,7 @@
     line-height: 14px;
     background-color: $basic-white;
     padding: 0 10px;
-    bottom: -7px;
+    bottom: -6px;
     left: 0;
     right: 0;
     margin: auto;
@@ -178,7 +179,7 @@
     text-align: left;
 
     .example__sum {
-      margin-left: 63px;
+      margin-left: 59px;
     }
   }
 }
@@ -198,7 +199,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 }
 
@@ -214,11 +215,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
     background-color: $basic-grey;
-
-    .slider {
-      position: absolute;
-      left: 44%;
-    }
   }
 }
 
