@@ -7,10 +7,15 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 52px;
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+    margin-bottom: 56px;
   }
 }
 

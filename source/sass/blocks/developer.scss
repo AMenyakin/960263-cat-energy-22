@@ -6,19 +6,36 @@
   padding-bottom: 22px;
 }
 
-.developer__link {
+.developer__logo {
+  display: flex;
+  align-items: center;
   font-family: $font-family-arial;
   font-size: 16px;
   line-height: 18px;
+  width: 100%;
+  justify-content: space-between;
 
   &:active,
   &:visited {
     color: inherit;
   }
-}
 
-.developer__logo {
+  &:hover .developer__icon path,
+  &:active .developer__icon path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 22px;
+    width: auto;
+    justify-content: flex-start;
   }
+}
+
+.developer__icon {
+  margin-left: 22px;
 }

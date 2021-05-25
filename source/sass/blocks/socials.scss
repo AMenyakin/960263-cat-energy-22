@@ -30,7 +30,45 @@
   }
 }
 
-.socials svg:hover path,
-.developer svg:hover path {
+.socials__item a:active {
+  opacity: 0.5;
+}
+
+.socials svg:hover path {
   fill: $basic-green;
+}
+
+.socials__item:hover .socials__fb-icon path {
+  fill: none;
+  stroke: $basic-green;
+}
+
+.socials__fb-icon {
+  width: 12px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 27px;
+  }
+}
+
+.socials__vk-icon {
+  width: 22px;
+  height: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 29px;
+    height: 17px;
+  }
+}
+
+.socials__ig-icon {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }

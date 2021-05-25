@@ -5,13 +5,14 @@
   @media (min-width: $tablet-width) {
     padding-left: $gap-medium;
     padding-right: $gap-medium;
-    padding-bottom: 0;
+    padding-bottom: 6px;
     border-bottom: 1px solid $mercury;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: $gap-large;
-    padding-right: $gap-large;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
     border-bottom: none;
   }
 }
@@ -73,12 +74,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 55px;
+    column-gap: 77px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 37px;
   }
 }
 
@@ -99,13 +100,23 @@
     &::after {
       position: absolute;
       top: -38px;
-      left: 125px;
+      left: 118px;
       counter-increment: about-item;
       content: counter(about-item);
-      font-size: 250px;
-      line-height: 250px;
+      font-size: 275px;
+      line-height: 275px;
       color: $basic-grey;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+
+    &::after {
+      left: 120px;
+      font-size: 275px;
+      line-height: 275px;
     }
   }
 

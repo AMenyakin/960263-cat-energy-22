@@ -32,14 +32,8 @@ img.page-footer__map {
 
 .page-footer__collaboration {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 110px;
-    top: 95px;
+    display: none;
   }
-}
-
-.page-footer__collaboration-container {
-  position: relative;
 }
 
 .page-footer__logo-wrapper {
@@ -50,4 +44,29 @@ img.page-footer__map {
 
 .page-footer__logo {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__location-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.page-footer__location .collaboration {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+  }
 }
