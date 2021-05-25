@@ -76,7 +76,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
     width: 896px;
     border-left: none;
     border-right: none;
@@ -128,12 +131,16 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
     width: 200px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 270px;
+    margin-top: 8px;
+    margin-left: 13px;
+    width: 288px;
   }
 }
 
