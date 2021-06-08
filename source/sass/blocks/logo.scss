@@ -1,18 +1,7 @@
 .logo {
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.logo__image {
-  display: block;
-
   @media (min-width: $tablet-width) {
     width: 174px;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {

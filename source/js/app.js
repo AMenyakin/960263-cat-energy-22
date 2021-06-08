@@ -6,7 +6,7 @@
 })();
 
 (function() {
-  var toggleMenuButton = document.querySelector('.page-header__menu-toggle');
+  var toggleMenuButton = document.querySelector('.toggle-menu-button');
   var pageHeader = document.querySelector('.page-header');
 
   toggleMenuButton.addEventListener('click', function() {
