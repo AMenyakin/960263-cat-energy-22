@@ -6,36 +6,27 @@
   padding-bottom: 22px;
 }
 
-.developer__logo {
-  display: flex;
-  align-items: center;
+.developer__name {
   font-family: $font-family-arial;
   font-size: 16px;
   line-height: 18px;
-  width: 100%;
-  justify-content: space-between;
+}
 
-  &:active,
-  &:visited {
-    color: inherit;
-  }
+.developer__logo {
+  margin-left: 22px;
+  font-size: 0;
+  line-height: 100%;
+}
 
-  &:hover .developer__icon path,
-  &:active .developer__icon path {
-    fill: $basic-green;
-  }
+.developer__name,
+.developer__logo {
+  color: inherit;
 
   &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 22px;
-    width: auto;
-    justify-content: flex-start;
+    opacity: 0.6;
   }
 }
 
-.developer__icon {
-  margin-left: 22px;
+.developer__logo:hover .developer__icon {
+  color: $basic-green;
 }

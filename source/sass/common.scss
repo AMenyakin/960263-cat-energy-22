@@ -1,17 +1,18 @@
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 
 $font-family-arial: "Arial", sans-serif;
 $font-family-oswald: "Oswald", "Arial", sans-serif;
@@ -33,6 +34,7 @@ $mercury2: #e7e7e7;
 $silver: #cdcdcd;
 $silver2: #bababa;
 $vivid-tangerine: #ff8282;
+$dove-gray: #666666;
 
 $translucent-white: rgba(255, 255, 255, 0.3);
 $translucent-green: rgba(104, 183, 56, 0.85);
@@ -64,4 +66,10 @@ $tablet-width-only: 1439px;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

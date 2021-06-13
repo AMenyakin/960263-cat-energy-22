@@ -1,0 +1,11 @@
+.link-logo {
+  display: block;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}

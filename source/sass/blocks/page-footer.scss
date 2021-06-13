@@ -42,18 +42,6 @@ img.page-footer__map {
   text-align: center;
 }
 
-.page-footer__logo {
-  display: block;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
 .page-footer__location-wrapper {
   position: relative;
   max-width: 1440px;
