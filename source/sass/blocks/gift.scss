@@ -1,24 +1,24 @@
 .gift {
-  padding-top: 58px;
+  display: flex;
+  padding: 48px 0 43px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 289px;
   background-image: url("../../img/gift-photo-small.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    height: 200px;
+    flex-direction: row;
+    padding: 0 124px 0 78px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    flex-direction: column;
+    padding: 48px 0 43px;
     width: 245px;
-    height: auto;
   }
 }
 
@@ -28,6 +28,7 @@
   width: 161px;
   font-family: $font-family-arial;
   color: $basic-white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -38,15 +39,6 @@
   }
 }
 
-.gift__icon-container {
-  margin-bottom: 48px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 57px;
-    margin-bottom: 47px;
-  }
+.gift__icon {
+  display: block;
 }
